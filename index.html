@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="desc">
+        <h1 class="gameName">
+          ROCK <br />
+          PAPER <br />
+          SCISSORS
+        </h1>
+        <div class="score-board">
+          <h3>score</h3>
+          <div class="score">0</div>
+          <!-- <div class="scored">0</div> -->
+        </div>
+      </div>
+      <div class="rule-modal">
+        <div class="rule-box">
+          <div class="rule-regulate">
+            <h4>RULES</h4>
+            <div class="cancel">
+              <img src="images/icon-close.svg" alt="close" />
+            </div>
+          </div>
+          <img class="ruleimg" src="images/image-rules.svg" alt="rules" />
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="game-content step1">
+          <label class="checker-box rock rock-pos pick">
+            <input type="checkbox" class="check rock-checker" id="rock" />
+
+            <div class="inner-el">
+              <div class="whited">
+                <img src="images/icon-rock.svg" alt="rules" />
+              </div>
+            </div>
+          </label>
+
+          <label  class="checker-box paper paper-pos pick">
+            <input type="checkbox"  class="check paper-checker" id="paper" />
+
+            <div class="inner-el">
+              <div class="whited">
+                <img src="images/icon-paper.svg" alt="rules" />
+              </div>
+            </div>
+          </label>
+
+          <label class="checker-box scissors scissors-label pick">
+            <input
+              type="checkbox"
+              class="check scissors-checker"
+              id="scissors"
+            />
+
+            <div class="inner-el">
+              <div class="whited">
+                <img src="images/icon-scissors.svg" alt="rules" />
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="game-content alive step2">
+          <div class="content-text">
+            <h3>YOU PICKED</h3>
+            <h3>THE HOUSE PICKED</h3>
+          </div>
+          <div class="all">
+            <div class="picked my-choice"></div>
+            <div class="result">
+              <h2 class="comment">YOU LOSE</h2>
+              <button class="restart">PLAY AGAIN</button>
+            </div>
+            <div class="picked mobile system" id="random"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules">Rules</div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ace</a>.
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <!-- <script src="test.js"></script> -->
+  <!-- <script src="test2.js"></script> -->
+</html>
